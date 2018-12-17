@@ -55,4 +55,4 @@ If you are facing any problem in connections or flashing any code, feel free to 
 
 # Working Video
 
-![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/Working%20video.MOV)
+[![Watch the video](Here!)](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/Working%20video.MOV)
