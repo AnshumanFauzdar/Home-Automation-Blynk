@@ -29,8 +29,15 @@ You can edit out output pins in blynk as we are virtually writing data on blynk
 Schematic is as follow
 
 Basic connection follow as:
+![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/Circuit1.JPG)
+
+![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/Circuit2.JPG)
 
 I have installed this circuit in a box:
+![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/CircuitBox1.JPG)
+
+![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/CircuitBox2.JPG)
+
 
 
 # Errors and tricks
@@ -45,3 +52,7 @@ You can add as many connections as much your controller allows!
 If you want to control only in local wifi, then I also have web server code lemme know I will upload that also
 
 If you are facing any problem in connections or flashing any code, feel free to mail me (fauzdaranshuman@gmail.com)
+
+# Working Video
+
+![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/Working%20video.MOV)
