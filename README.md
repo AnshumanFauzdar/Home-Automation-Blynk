@@ -27,6 +27,7 @@ Keep everyting handy and follow the schematic diagram as shown below
 You can edit out output pins in blynk as we are virtually writing data on blynk
 
 Schematic is as follow
+![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/Schematic.JPG)
 
 Basic connection follow as:
 ![alt text](https://github.com/AnshumanFauzdar/Home-Automation-Blynk/blob/master/Circuit1.JPG)
