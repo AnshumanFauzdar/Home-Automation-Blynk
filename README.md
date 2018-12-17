@@ -46,6 +46,8 @@ I have installed this circuit in a box:
 In schematic this is clear if there is no internet connection through wifi, then your main connection will be on/off according to your connection
 Now you can overcome this problem by double way switch, or just simply trip your MCB and wait for internet connection to back in working state, until then use your old connection as main.
 
+If you have installed your cicrcuit in a box, then you may face heating issue which can be solved by adding a small fan, I have used 12v 3" Fan to beat the heat issue.
+
 # Conclusion
 
 This is very DIY project and can help in controlling your home even when you are far away from home
