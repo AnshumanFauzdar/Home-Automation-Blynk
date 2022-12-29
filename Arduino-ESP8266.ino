@@ -1,36 +1,65 @@
-#include <SPI.h>
-#include <BlynkSimpleEsp8266.h>
+#define BLYNK_TEMPLATE_ID "TEMPLATE_ID"
+#define BLYNK_DEVICE_NAME "DEVICE_NAME"
+#define BLYNK_AUTH_TOKEN "AUTH_TOKEN"
+
 #include <ESP8266WiFi.h>
+#include <BlynkSimpleEsp8266.h>
 
+char auth[] = BLYNK_AUTH_TOKEN;
 
-char auth[] = "Authorization Code";
+// Your WiFi credentials.
+char ssid[] = "WIFI_NAME";
+char pass[] = "WIFI_PASSWORD";
 
+BLYNK_WRITE(V0)
+{
+  // Room Light
+  int value = param.asInt();
 
-char ssid[] = "Wifi SSID";
-char pass[] = "Password";
+  Serial.println(value);
+  if(value == 1)
+  {
+    Serial.println("ON");
+    digitalWrite(D0, LOW);
+  }
+  if(value == 0)
+  {
+    Serial.println("OFF");
+    digitalWrite(D0, HIGH);    
+  }
+
+}
+
+BLYNK_WRITE(V1)
+{
+  // Stair Light
+  int value = param.asInt();
+
+  Serial.println(value);
+  if(value == 1)
+  {
+    Serial.println("ON");
+    digitalWrite(D0, LOW);
+  }
+  if(value == 0)
+  {
+    Serial.println("OFF");
+    digitalWrite(D0, HIGH);    
+  }
+}
 
 void setup()
 {
   // Debug console
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   Blynk.begin(auth, ssid, pass);
   
+  pinMode(D0, OUTPUT);
+  digitalWrite(D0, HIGH);
 }
 
-BLYNK_WRITE(V1)
-
-{
-
-  Blynk.setProperty(V1, "offLabel", "OFF");
-    
-  Blynk.setProperty(V1, "onLabel", "ON");
-
-
-  
-  }
 void loop()
 {
   Blynk.run();
-  
 }
